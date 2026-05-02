@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const BASE_URL = 'http://20.207.122.201/evaluation-service';
+const BASE_URL = process.env.AUTH_BASE_URL || 'http://20.207.122.201/evaluation-service';
 
 /**
  * Authenticates with the evaluation server and returns a Bearer token.

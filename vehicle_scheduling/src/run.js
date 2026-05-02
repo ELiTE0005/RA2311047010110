@@ -1,13 +1,3 @@
-/**
- * Vehicle Maintenance Scheduler - Standalone Runner
- *
- * This script fetches live data from the evaluation server,
- * runs the 0/1 Knapsack optimiser for each depot, and prints
- * a detailed schedule to the console.
- *
- * Run with: node src/run.js
- */
-
 require('dotenv').config();
 const { getAuthToken, fetchDepots, fetchVehicles } = require('./apiClient');
 const { scheduleAllDepots } = require('./scheduler');
